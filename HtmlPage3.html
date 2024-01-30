@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Greeting Page</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: lightcyan;
+            font-size: 3em;
+        }
+
+        .heart {
+            color: purple;
+            font-size: 2em;
+        }
+
+        #proceedButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: rebeccapurple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+       
+        body {
+            background-color: mediumpurple; /* Set the background color to purple */
+            margin: 0; /* Remove default margin */
+        }
+  
+    </style>
+</head>
+<body>
+    <h1>
+        <span class="heart">&#10084;</span> hi kookie pookie <span class="heart">&#10084;</span>
+    </h1>
+    <button id="proceedButton" onclick="proceedToNextPage()">Proceed</button>
+
+    <script>
+        function proceedToNextPage() {
+            // Use a relative path to HtmlPage1.html
+            var nextPageURL = 'HtmlPage4.html';
+
+            // You can also use window.location.href directly
+            window.location.href = nextPageURL;
+        }
+    </script>
+</body>
+</html>
